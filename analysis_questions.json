@@ -1,0 +1,62 @@
+[
+  {
+    "key": "coreProblem",
+    "question": "What are the primary challenges in accurately translating natural language questions into SQL queries?"
+  },
+  {
+    "key": "modelArchitecture",
+    "question": "What types of neural network architectures are commonly employed in Text-to-SQL models?"
+  },
+  {
+    "key": "encodingDecoding",
+    "question": "How do Text-to-SQL models encode natural language questions and database schemas, and subsequently decode them into SQL queries?"
+  },
+  {
+    "key": "benchmarkDatasets",
+    "question": "What benchmark datasets are commonly used for evaluating Text-to-SQL models, and what are their characteristics?"
+  },
+  {
+    "key": "dataAugmentation",
+    "question": "What data augmentation or synthesis techniques are used to improve the robustness and generalization of Text-to-SQL models?"
+  },
+  {
+    "key": "evaluationMetrics",
+    "question": "What evaluation metrics are most frequently used to assess the performance of Text-to-SQL models?"
+  },
+  {
+    "key": "schemaLinking",
+    "question": "How do Text-to-SQL models address the schema linking problem, i.e., identifying the relevant tables and columns in the database schema?"
+  },
+  {
+    "key": "errorAnalysis",
+    "question": "What types of errors are commonly made by Text-to-SQL models, and what are the main causes of these errors?"
+  },
+  {
+    "key": "domainGeneralization",
+    "question": "How do Text-to-SQL models handle domain generalization, i.e., adapting to new and unseen databases?"
+  },
+  {
+    "key": "multiTurnConversations",
+    "question": "How do Text-to-SQL models handle multi-turn conversations or context-dependent questions?"
+  },
+  {
+    "key": "constrainedDecoding",
+    "question": "What techniques are used to constrain the decoding process to generate valid SQL queries?"
+  },
+  {
+    "key": "intermediateRepresentations",
+    "question": "Do Text-to-SQL models use any intermediate representations between natural language and SQL, and if so, what are they?"
+  },
+  {
+    "key": "pretrainedLanguageModels",
+    "question": "How are pre-trained language models leveraged to improve the performance of Text-to-SQL models?"
+  },
+  {
+    "key": "resourceEfficiency",
+    "question": "How do Text-to-SQL models address the computational cost and inference time, especially when using large language models?"
+  },
+  {
+    "key": "realWorldApplications",
+    "question": "What are some real-world applications or use cases of Text-to-SQL technology?"
+  }
+]

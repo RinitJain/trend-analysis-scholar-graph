@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "topic": "Text-to-SQL Future Research Directions",
+  "overall_summary": "The Text-to-SQL field has seen significant progress, fueled by the advent of large language models (LLMs). Early approaches involved complex model architectures and schema linking mechanisms, but the focus has shifted towards leveraging LLMs for their reasoning and generation capabilities. However, challenges persist, including effectively handling complex database schemas, ensuring SQL query validity and efficiency, mitigating hallucinations, and adapting to real-world data complexities (dirty data, lack of documentation). The field is actively exploring methods for improving schema linking, query generation, and model training, with a growing emphasis on cost-effectiveness and robustness in handling diverse and complex SQL queries.",
+  "predicted_gaps": [
+    {
+      "predicted_research_gap": "How can we develop more robust and efficient methods for handling complex SQL queries involving multiple JOINs, nested queries, and aggregation functions, especially in zero-shot or few-shot settings?",
+      "description": "While LLMs have shown promise in Text-to-SQL, many struggle with generating complex SQL queries and generalization to unseen databases. Several papers identify subqueries as a particularly challenging area, and there is an ongoing need for more sophisticated techniques that can reason through complex queries, minimize schema linking errors, and ensure the generated queries are both syntactically correct and semantically aligned with the user's intent. This includes research into novel prompting strategies, data augmentation techniques, and the development of specialized model architectures capable of capturing complex relationships within the database schema.",
+      "confidence": 0.9,
+      "supporting_papers": [
+        "The Dawn of Natural Language to SQL: Are We Fully Ready?",
+        "G 3 R: A Graph-Guided Generate-and-Rerank Framework for Complex and Cross-domain Text-to-SQL Generation",
+        "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL"
+      ]
+    },
+    {
+      "predicted_research_gap": "How can we effectively minimize hallucinations and improve the reliability of LLMs in Text-to-SQL generation, particularly in the presence of incomplete or dirty database metadata?",
+      "description": "Hallucinations, where LLMs generate irrelevant, erroneous, or inconsistent SQL or schema information, are a major impediment to the deployment of Text-to-SQL systems. Several papers highlight this as a key challenge, particularly schema-based hallucinations involving incorrect column/table selection or value misrepresentation. Research is needed to develop techniques that improve the alignment between natural language queries and database schemas, reduce the likelihood of generating invalid SQL, and incorporate mechanisms for verifying the accuracy of the generated queries against the database content. This may involve novel schema linking strategies, the integration of external knowledge sources, and the development of more robust error detection and correction methods.",
+      "confidence": 0.85,
+      "supporting_papers": [
+        "Before Generation, Align it! A Novel and Effective Strategy for Mitigating Hallucinations in Text-to-SQL Generation",
+        "Automatic Metadata Extraction for Text-to-SQL",
+        "SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL"
+      ]
+    },
+    {
+      "predicted_research_gap": "How can we develop more cost-effective and resource-efficient Text-to-SQL models that can be deployed in real-world applications with limited computational resources?",
+      "description": "While LLMs have achieved impressive results in Text-to-SQL, their high computational cost and inference latency can be prohibitive for many real-world applications. There is a growing need for more efficient models that can achieve comparable accuracy with lower computational overhead. This includes research into smaller language models (SLMs), knowledge distillation techniques, model compression methods, and optimized inference strategies. Furthermore, exploring methods that reduce reliance on frequent and costly LLM calls, as well as more effective data utilization and schema filtering, are essential for making Text-to-SQL technology more accessible and deployable.",
+      "confidence": 0.9,
+      "supporting_papers": [
+        "CHESS: CONTEXTUAL HARNESSING FOR EFFICIENT SQL SYNTHESIS",
+        "SLM-SQL: An Exploration of Small Language Models for Text-to-SQL",
+        "Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL"
+      ]
+    },
+    {
+      "predicted_research_gap": "How can we improve the robustness and generalizability of Text-to-SQL models to handle variations in natural language queries and adapt to diverse database schemas and domains?",
+      "description": "Real-world users express their queries in diverse ways, using different abbreviations, synonyms, and question styles. Database schemas also vary significantly across domains, posing a challenge for Text-to-SQL models. Improving the robustness and generalizability of these models is crucial for their widespread adoption. Research is needed to develop techniques that can handle variations in natural language, adapt to different database schemas and domains, and maintain high accuracy in the presence of noisy or ambiguous data. This may involve data augmentation techniques, domain adaptation methods, and the development of more robust schema linking mechanisms.",
+      "confidence": 0.8,
+      "supporting_papers": [
+        "The Dawn of Natural Language to SQL: Are We Fully Ready?",
+        "Improving Generalization in Language Model-Based Text-to-SQL Semantic Parsing: Two Simple Semantic Boundary-Based Techniques",
+        "CodeS: Towards Building Open-source Language Models for Text-to-SQL"
+      ]
+    },
+    {
+      "predicted_research_gap": "How can we effectively leverage and integrate external knowledge sources to enhance the reasoning capabilities of Text-to-SQL models, particularly in complex and domain-specific scenarios?",
+      "description": "Many real-world Text-to-SQL tasks require reasoning using external knowledge sources, such as domain-specific knowledge bases or ontologies. Integrating these knowledge sources into Text-to-SQL models can significantly improve their accuracy and reasoning capabilities, particularly in complex and domain-specific scenarios. Research is needed to develop techniques that can effectively leverage external knowledge sources to enhance schema linking, query generation, and query verification. This may involve knowledge graph embeddings, reasoning over knowledge graphs, and the development of specialized model architectures that can seamlessly integrate external knowledge.",
+      "confidence": 0.75,
+      "supporting_papers": [
+        "G 3 R: A Graph-Guided Generate-and-Rerank Framework for Complex and Cross-domain Text-to-SQL Generation",
+        "SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL",
+        "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL"
+      ]
+    }
+  ]
+}

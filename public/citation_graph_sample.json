@@ -1,0 +1,68 @@
+{
+  "nodes": [
+    {
+      "id": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation",
+      "year": 2023,
+      "accuracy": 86.6,
+      "pdf_url": "https://arxiv.org/pdf/2308.15363.pdf",
+      "publishedDate": "2023-11-20",
+      "normalizedAccuracy": 1,
+      "primary_metric": "score",
+      "analysis": {
+        "research_problem": "The paper aims to improve the effectiveness, efficiency, and economy of LLM-based Text-to-SQL solutions.",
+        "technique": "The paper proposes a new integrated solution, DAIL-SQL, based on a systematic comparison of prompt engineering methods, including question representation, example selection, and example organization.",
+        "evaluation_result": "The paper introduces DAIL-SQL, an integrated solution that achieves an execution accuracy of 86.6% on the Spider leaderboard.",
+        "research_gap": "The paper addresses the absence of a systematic benchmark for evaluating LLM-based Text-to-SQL solutions and token efficiency in prompt engineering.",
+        "limitation_scope": "The paper explores the potential of open-source LLMs and the advantages/disadvantages of supervised fine-tuning.",
+        "benchmarks": "Spider, BIRD",
+        "dataSynthesis": "Not mentioned.",
+        "evaluationMetrics": "Execution Accuracy (EX), Exact Match (EM)",
+        "modulesComponents": "Prompt Engineering (Question Representation, Example Selection, Example Organization), Supervised Fine-tuning",
+        "errorAnalysis": "Not mentioned.",
+        "challenges": "Token efficiency in prompts, lack of systematic benchmarks.",
+        "solutionCategories": "LLM-based Text-to-SQL",
+        "preprocessing": "Not mentioned.",
+        "postprocessing": "Not mentioned.",
+        "modelTypes": "Large Language Models (GPT-4, open-source LLMs)",
+        "encodingDecodingStrategies": "In-context learning through prompt engineering.",
+        "limitationsOpenProblems": "High cost and token limits of proprietary LLMs; performance gap in open-source LLMs.",
+        "applicationsUseCases": "Natural language interfaces for databases."
+      }
+    },
+    {
+      "id": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+      "year": 2023,
+      "accuracy": 85.3,
+      "pdf_url": "https://arxiv.org/pdf/2304.11015.pdf",
+      "publishedDate": null,
+      "normalizedAccuracy": 0.960725075528701,
+      "primary_metric": "score",
+      "analysis": {
+        "research_problem": "The paper addresses the problem of improving the performance of Large Language Models (LLMs) in the reasoning process for the text-to-SQL task.",
+        "technique": "The core technique involves decomposing the text-to-SQL task into smaller sub-tasks and feeding the solutions of these sub-tasks into LLMs to improve performance.",
+        "evaluation_result": "The proposed approach improves performance in text-to-SQL tasks, achieving an execution accuracy of 85.3% on the Spider holdout test set, surpassing the previous state-of-the-art. It also achieved an execution accuracy of 55.9% on the BIRD benchmark, setting a new state-of-the-art.",
+        "research_gap": "There is a significant gap between the performance of fine-tuned models and prompting approaches using Large Language Models (LLMs) on the text-to-SQL task.",
+        "limitation_scope": "The abstract does not explicitly mention the limitations or future work, but it suggests the approach is more effective than fine-tuning, indicating a potential area for further investigation into the trade-offs between prompting and fine-tuning.",
+        "benchmarks": "Spider, BIRD",
+        "dataSynthesis": "Not mentioned.",
+        "evaluationMetrics": "Execution Accuracy (EX)",
+        "modulesComponents": "Schema Linking, Query Decomposition, SQL Generation, Self-Correction",
+        "errorAnalysis": "Not mentioned.",
+        "challenges": "Improving reasoning capabilities of LLMs for complex queries.",
+        "solutionCategories": "In-context Learning, Few-shot Prompting",
+        "preprocessing": "Decomposing problem into sub-tasks.",
+        "postprocessing": "Self-correction of generated SQL.",
+        "modelTypes": "Large Language Models (GPT-4, Codex)",
+        "encodingDecodingStrategies": "In-context learning with decomposed prompts.",
+        "limitationsOpenProblems": "Generalizability to other complex reasoning tasks.",
+        "applicationsUseCases": "Natural language database querying, complex reasoning tasks."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction",
+      "to": "Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation"
+    }
+  ]
+}

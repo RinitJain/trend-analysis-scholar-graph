@@ -1,0 +1,72 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": "PaperA",
+        "year": 2021,
+        "accuracy": 86.4,
+        "pdf_url": "https://arxiv.org/pdf/2101.00001.pdf"
+      },
+      {
+        "id": "PaperB",
+        "year": 2022,
+        "accuracy": 89.2,
+        "pdf_url": "https://arxiv.org/pdf/2202.00002.pdf"
+      },
+      {
+        "id": "PaperC",
+        "year": 2023,
+        "accuracy": 91.8,
+        "pdf_url": "https://arxiv.org/pdf/2303.00003.pdf"
+      },
+      {
+        "id": "PaperD",
+        "year": 2021,
+        "accuracy": 85.1,
+        "pdf_url": "https://arxiv.org/pdf/2104.00004.pdf"
+      },
+      {
+        "id": "PaperE",
+        "year": 2022,
+        "accuracy": 90.5,
+        "pdf_url": "https://arxiv.org/pdf/2205.00005.pdf"
+      },
+      {
+        "id": "PaperF",
+        "year": 2024,
+        "accuracy": 93.2,
+        "pdf_url": "https://arxiv.org/pdf/2406.00006.pdf"
+      }
+    ],
+    "edges": [
+      {
+        "source": "PaperB",
+        "target": "PaperA"
+      },
+      {
+        "source": "PaperC",
+        "target": "PaperA"
+      },
+      {
+        "source": "PaperC",
+        "target": "PaperB"
+      },
+      {
+        "source": "PaperE",
+        "target": "PaperA"
+      },
+      {
+        "source": "PaperE",
+        "target": "PaperD"
+      },
+      {
+        "source": "PaperF",
+        "target": "PaperC"
+      },
+      {
+        "source": "PaperF",
+        "target": "PaperE"
+      }
+    ]
+  }
+}
